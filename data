@@ -1,1 +1,36 @@
+# Data Folder
+
+## Overview
+This folder contains datasets used in the research study **"Predicting Depression Risk to Enhance Academic Success."** The datasets integrate demographic information, academic performance metrics, and mental health indicators to analyze depression risk among students and its correlation with exam scores.
+
+## Data Sources
+The datasets included in this folder are sourced from reputable platforms, ensuring data reliability and credibility. The primary sources include **Scientific Data (Nature Research)** and **NeurIPS Datasets and Benchmarks track**.
+
+## Datasets
+### 1. Student Depression Dataset
+- **Description:** Contains demographic data, academic performance records, and mental health indicators to assess students' depression risk.
+- **Variables:**
+  | Variable | Description |
+  |----------|-------------|
+  | Student_ID | Unique identifier for each student |
+  | Age | Age of the student |
+  | Gender | Gender of the student |
+  | GPA | Grade Point Average |
+  | Depression_Score | Score indicating depression risk based on mental health assessment |
+  | Anxiety_Level | Reported level of anxiety |
+  | Sleep_Hours | Average hours of sleep per night |
+  | Social_Activity | Participation in social activities (Yes/No) |
+
+### 2. Student Exam Scores Dataset
+- **Description:** Includes students' exam scores, study habits, and past academic records to analyze performance trends and correlations with mental health indicators.
+- **Variables:**
+  | Variable | Description |
+  |----------|-------------|
+  | Student_ID | Unique identifier for each student |
+  | Study_Hours | Average hours spent studying per week |
+  | Exam_Score | Score achieved in recent exams |
+  | Attendance_Rate | Percentage of classes attended |
+  | Past_Academic_Performance | Historical academic performance |
+
+These datasets will be used to develop predictive machine learning models for assessing depression risk and its impact on academic success.
 
