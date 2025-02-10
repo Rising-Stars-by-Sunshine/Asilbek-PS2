@@ -106,9 +106,3 @@ repository-name/
 │── main.py             # Main execution script
 │── README.md           # System setup instructions
 ```
-
-## Dependencies
-See `requirements.txt` for a complete list of dependencies.
-
-## Contact
-For questions, contact **your-email@example.com** or open an issue in this repository.
