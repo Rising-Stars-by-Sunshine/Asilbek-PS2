@@ -1,1 +1,41 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+depression_df = pd.read_csv("../data/student_depression_dataset.csv")
+exam_scores_df = pd.read_csv("../data/student_exam_scores_dataset.csv")
+
+print("Depression Dataset Info:")
+print(depression_df.info())
+print("\nExam Scores Dataset Info:")
+print(exam_scores_df.info())
+
+print("\nDepression Dataset Summary:")
+print(depression_df.describe())
+print("\nExam Scores Dataset Summary:")
+print(exam_scores_df.describe())
+
+print("\nMissing Values in Depression Dataset:")
+print(depression_df.isnull().sum())
+print("\nMissing Values in Exam Scores Dataset:")
+print(exam_scores_df.isnull().sum())
+
+
+plt.figure(figsize=(10,5))
+sns.histplot(depression_df["Depression_Score"], bins=30, kde=True)
+plt.title("Distribution of Depression Scores")
+plt.show()
+
+plt.figure(figsize=(10,5))
+sns.histplot(exam_scores_df["Exam_Score"], bins=30, kde=True)
+plt.title("Distribution of Exam Scores")
+plt.show()
+
+
+merged_df = pd.merge(depression_df, exam_scores_df, on="Student_ID", how="inner")
+print("\nMerged Dataset Info:")
+print(merged_df.info())
+
+merged_df.to_csv("../data/merged_student_data.csv", index=False)
+print("Merged dataset saved successfully.")
 
