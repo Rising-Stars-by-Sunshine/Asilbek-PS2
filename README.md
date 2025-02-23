@@ -1,108 +1,131 @@
-# PS
-# Predicting Depression Risk to Enhance Academic Success
+PS
+Predicting Depression Risk to Enhance Academic Success
+Overview
+This repository contains the code and resources for the research study "Predicting Depression Risk to Enhance Academic Success". The project explores the use of machine learning models to assess depression risk among students by integrating mental health indicators with academic performance metrics and analyzing correlations between depression status and exam scores.
 
-## Overview
-This repository contains the code and resources for the research study **"Predicting Depression Risk to Enhance Academic Success"**. The project explores the use of machine learning models to assess depression risk among students by integrating mental health indicators with academic performance metrics and analyzing correlations between depression status and exam scores.
+System Configuration Instructions
+1. Local Environment Setup
+Follow these steps to run the analysis on your local machine:
 
-## System Configuration Instructions
-
-### 1. Local Environment Setup
-To run the analysis locally, follow these steps:
-
-#### Prerequisites
+Prerequisites
 Ensure your system has the following installed:
-- Python (>= 3.8)
-- Git
-- Virtual Environment (optional but recommended)
-- Jupyter Notebook (if running interactive analysis)
 
-#### Step 1: Clone the Repository
-```sh
+Python (>= 3.8)
+Git
+Virtual Environment tools (optional but recommended)
+Jupyter Notebook (if running interactive analysis)
+Step 1: Clone the Repository
+sh
+Copy
+Edit
 git clone https://github.com/your-username/repository-name.git
 cd repository-name
-```
-
-#### Step 2: Create and Activate Virtual Environment (Optional)
-```sh
+Step 2: Create and Activate a Virtual Environment (Optional)
+sh
+Copy
+Edit
 python -m venv venv
-source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate  # On Windows
-```
-
-#### Step 3: Install Dependencies
-```sh
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+Step 3: Install Dependencies
+sh
+Copy
+Edit
 pip install -r requirements.txt
-```
+Step 4: Set Up Environment Variables
+Create a .env file in the root directory with the following configuration:
 
-#### Step 4: Set Up Environment Variables
-Create a `.env` file in the root directory and add the necessary configurations:
-```sh
+sh
+Copy
+Edit
 DATA_PATH="./data/"
 MODEL_PATH="./models/"
-```
+Step 5: Run the Jupyter Notebook (if applicable)
+Launch Jupyter Notebook to work interactively:
 
-#### Step 5: Run the Jupyter Notebook (if applicable)
-```sh
+sh
+Copy
+Edit
 jupyter notebook
-```
+Step 6: Execute the Analysis
+Run the main script to preprocess the data and train the models:
 
-#### Step 6: Execute the Analysis
-Run the main script to preprocess the data and train models:
-```sh
+sh
+Copy
+Edit
 python main.py
-```
-
-### 2. Cloud Environment Setup (Google Colab & AWS EC2)
-#### **Google Colab**
-1. Open Google Colab: [Google Colab](https://colab.research.google.com/)
-2. Clone the repository within the Colab notebook:
-   ```python
-   !git clone https://github.com/your-username/repository-name.git
-   %cd repository-name
-   ```
-3. Install dependencies:
-   ```python
-   !pip install -r requirements.txt
-   ```
-4. Upload datasets to Google Drive and mount it:
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
-   ```
-5. Run the analysis by executing the notebook cells.
-
-#### **AWS EC2 Setup**
-1. Launch an EC2 instance (Ubuntu 20.04 recommended).
-2. Connect via SSH:
-   ```sh
-   ssh -i your-key.pem ubuntu@your-instance-ip
-   ```
-3. Install Python and required packages:
-   ```sh
-   sudo apt update && sudo apt install -y python3-pip
-   ```
-4. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/repository-name.git
-   cd repository-name
-   ```
-5. Install dependencies:
-   ```sh
-   pip3 install -r requirements.txt
-   ```
-6. Run the main script:
-   ```sh
-   python3 main.py
-   ```
-
-## Directory Structure
-```
+2. Cloud Environment Setup (Google Colab & AWS EC2)
+Google Colab
+Open Google Colab.
+Clone the repository within a Colab notebook:
+python
+Copy
+Edit
+!git clone https://github.com/your-username/repository-name.git
+%cd repository-name
+Install dependencies:
+python
+Copy
+Edit
+!pip install -r requirements.txt
+Upload your datasets to Google Drive and mount it:
+python
+Copy
+Edit
+from google.colab import drive
+drive.mount('/content/drive')
+Run the analysis by executing the notebook cells.
+AWS EC2 Setup
+Launch an EC2 instance (Ubuntu 20.04 is recommended).
+Connect via SSH:
+sh
+Copy
+Edit
+ssh -i your-key.pem ubuntu@your-instance-ip
+Update packages and install Python:
+sh
+Copy
+Edit
+sudo apt update && sudo apt install -y python3-pip
+Clone the repository:
+sh
+Copy
+Edit
+git clone https://github.com/your-username/repository-name.git
+cd repository-name
+Install dependencies:
+sh
+Copy
+Edit
+pip3 install -r requirements.txt
+Run the main script:
+sh
+Copy
+Edit
+python3 main.py
+Directory Structure
+bash
+Copy
+Edit
 repository-name/
 │── data/               # Dataset files
 │── models/             # Trained models
-│── notebooks/          # Jupyter notebooks for analysis
-│── src/                # Source code files
+│── notebooks/          # Jupyter notebooks for interactive analysis
+│── src/                # Source code files (scripts, utility functions, etc.)
 │── requirements.txt    # Python dependencies
 │── main.py             # Main execution script
-│── README.md           # System setup instructions
-```
+│── README.md           # System setup instructions and project overview
+Dependencies
+Refer to the requirements.txt file for a complete list of project dependencies, which include libraries such as:
+
+pandas, numpy
+rapidfuzz (for fuzzy matching)
+matplotlib, seaborn
+scikit-learn
+xgboost
+transformers (Hugging Face)
+statsmodels
+Contact
+For questions or support, please contact aa789@duke.edu or open an issue in this repository.
