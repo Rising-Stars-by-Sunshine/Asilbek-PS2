@@ -1,4 +1,6 @@
-PS
+
+![White and Blue Modern College Academic Research Poster](https://github.com/user-attachments/assets/37b9eec8-4190-4534-90ba-d0af212ac8f5)
+
 Predicting Depression Risk to Enhance Academic Success
 Overview
 This repository contains the code and resources for the research study "Predicting Depression Risk to Enhance Academic Success". The project explores the use of machine learning models to assess depression risk among students by integrating mental health indicators with academic performance metrics and analyzing correlations between depression status and exam scores.
